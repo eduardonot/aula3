@@ -1,11 +1,11 @@
-var nomes = ["Claudio","Renan","Maicon","Thiago","Diego","Douglas","Henrique","Leonardo","Eduardo","Ronaldo","Vinicius"]
-var lista = []
+var nomesDisponiveis = ["Claudio","Renan","Maicon","Thiago","Diego","Douglas","Henrique","Leonardo","Eduardo","Ronaldo","Vinicius"]
+var nomesDisponiveisCadastrados = []
 function exportaUsuarios(){
-    console.log(lista)
+    console.log(nomesDisponiveisCadastrados)
 }
 function cadastraUsuarios(){
-    var gerarNomes = nomes[Math.floor(Math.random() * nomes.length)];
-    console.log(`O usuario ${gerarNomes} foi cadastrado com sucesso!`)
-    lista.push(gerarNomes)
+    var gerarnomesDisponiveis = nomesDisponiveis[Math.floor(Math.random() * nomesDisponiveis.length)]
+    console.log(`O usuario ${gerarnomesDisponiveis} foi cadastrado com sucesso!`)
+    nomesDisponiveisCadastrados.push(gerarnomesDisponiveis)
 }
 module.exports = {cadastraUsuarios, exportaUsuarios}
